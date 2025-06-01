@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌿 Plant Care Tracker</h1>
+        
+        <div class="add-plant-form">
+            <h2>Add New Plant</h2>
+            <form id="plantForm">
+                <div class="form-group">
+                    <label for="plantName">Plant Name:</label>
+                    <input type="text" id="plantName" required>
+                </div>
+                <div class="form-group">
+                    <label for="waterNeeds">Water Needs:</label>
+                    <select id="waterNeeds" required>
+                        <option value="low">Low - Once every 2 weeks</option>
+                        <option value="medium">Medium - Weekly</option>
+                        <option value="high">High - 2-3 times per week</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="lightNeeds">Light Needs:</label>
+                    <select id="lightNeeds" required>
+                        <option value="low">Low Light</option>
+                        <option value="medium">Medium Light</option>
+                        <option value="high">Bright Light</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Care Notes:</label>
+                    <textarea id="notes"></textarea>
+                </div>
+                <button type="submit">Add Plant</button>
+            </form>
+        </div>
+
+        <div class="plants-list">
+            <h2>My Plants</h2>
+            <div id="plantsList"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
